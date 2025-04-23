@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated CV Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f4f7f6;
+    }
+    .cv-form {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 30px;
+      border: 1px solid #dcdcdc;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+      border-bottom: 2px solid #5a9bd5;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    label {
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+    }
+    input, textarea, select {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+    ul {
+        list-style: disc inside;
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+    button {
+      padding: 12px 20px;
+      background-color: #5a9bd5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      align-self: flex-start;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #4a8acb;
+    }
+  </style>
+</head>
+<body>
+<form class="cv-form">
+  <h2>Personal Information</h2>
+  <div class="form-field">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName" required placeholder="Enter your first name">
+  </div>
+  <div class="form-field">
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="lastName" required placeholder="Enter your last name">
+  </div>
+  <div class="form-field">
+    <label for="dateOfBirth">Date of Birth</label>
+    <input type="date" name="dateOfBirth" id="dateOfBirth" required placeholder="YYYY-MM-DD">
+  </div>
+  <h2>Summary</h2>
+  <div class="form-field">
+    <label for="summary">Professional Summary</label>
+    <textarea name="summary" id="summary" required placeholder="Write a brief summary of your professional experience and skills"></textarea>
+  </div>
+  <h2>Work Experience</h2>
+  <div class="form-field">
+    <label for="jobTitle1">Job Title</label>
+    <input type="text" name="jobTitle1" id="jobTitle1" required placeholder="Enter job title">
+  </div>
+  <div class="form-field">
+    <label for="company1">Company</label>
+    <input type="text" name="company1" id="company1" required placeholder="Enter company name">
+  </div>
+  <div class="form-field">
+    <label for="startDate1">Start Date</label>
+    <input type="date" name="startDate1" id="startDate1" required placeholder="YYYY-MM-DD">
+  </div>
+  <div class="form-field">
+    <label for="endDate1">End Date</label>
+    <input type="date" name="endDate1" id="endDate1" placeholder="YYYY-MM-DD">
+  </div>
+  <div class="form-field">
+    <label for="description1">Description</label>
+    <textarea name="description1" id="description1" required placeholder="Describe your responsibilities and achievements"></textarea>
+  </div>
+  <h2>Education</h2>
+  <div class="form-field">
+    <label for="degree1">Degree</label>
+    <input type="text" name="degree1" id="degree1" required placeholder="Enter your degree">
+  </div>
+  <div class="form-field">
+    <label for="university1">University</label>
+    <input type="text" name="university1" id="university1" required placeholder="Enter university name">
+  </div>
+  <div class="form-field">
+    <label for="graduationDate1">Graduation Date</label>
+    <input type="date" name="graduationDate1" id="graduationDate1" required placeholder="YYYY-MM-DD">
+  </div>
+  <h2>Skills</h2>
+  <ul>
+    <li></li>
+  </ul>
+  <h2>Contact Information</h2>
+  <div class="form-field">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required placeholder="Enter your email">
+  </div>
+  <div class="form-field">
+    <label for="phone">Phone Number</label>
+    <input type="phone" name="phone" id="phone" required placeholder="Enter your phone number">
+  </div>
+  <div class="form-field">
+    <label for="linkedInUrl">LinkedIn Profile URL</label>
+    <input type="url" name="linkedInUrl" id="linkedInUrl" placeholder="Enter your LinkedIn profile URL">
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
